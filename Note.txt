@@ -1,0 +1,39 @@
+Working with ruby on rails
+
+Rails APplication
+
+rails new MyApp --database=postgresql
+rails db:create
+rails server // launches puma which is a rails server
+rals generate controller ControllerName action
+rails generate migration MigrationName
+rails generate model ModelName columns
+rals db:migrate
+rails db:migrate:status
+rails db:migrate VERSION=0
+rails db:migrate VERSION=2022244242424 // migrate up or down till it get to the specific migration and stops
+rails console -e development
+rails db:seed
+
+rails new martapi --api --database=postgresql
+rails generate scaffold Cat name:string age:integer
+
+rails dbconsole // to access the database for the project
+\dt // display the database table
+\q // to exit from the database console
+
+
+WSL Location
+\\wsl$\Ubuntu-20.04\home\kachilala\Code
+
+sudo service postgresql start  // start service
+psql -U postgres -h localhost // login to postgres
+\conninfo  // to get the connecton string
+\du // list all the database user
+\h // list of helpful command
+\l // list databases
+
+
+Installed Items 
+sudo apt-get install libpq-dev
+gem install pg // This output Successfully installed pg-1.4.3
